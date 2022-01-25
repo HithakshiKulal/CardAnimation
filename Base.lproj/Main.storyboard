@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fg-uJ-uFx">
+                                <rect key="frame" x="0.0" y="84" width="414" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z89-wK-aoK" userLabel="Card1" customClass="CardView" customModule="CardAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="0.0" width="0.0" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="B9s-d3-bGj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ1-L8-a31" userLabel="Card2" customClass="CardView" customModule="CardAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="0.0" width="0.0" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="eR9-w4-5Ht"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNd-s5-bKW" userLabel="Card3" customClass="CardView" customModule="CardAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="0.0" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="iGo-u4-KCf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kNd-s5-bKW" secondAttribute="trailing" priority="999" constant="20" id="1ZN-I4-fM2"/>
+                                    <constraint firstAttribute="bottom" secondItem="IZ1-L8-a31" secondAttribute="bottom" id="5DH-Zv-81d"/>
+                                    <constraint firstAttribute="bottom" secondItem="kNd-s5-bKW" secondAttribute="bottom" id="66m-u8-bHE"/>
+                                    <constraint firstItem="IZ1-L8-a31" firstAttribute="top" secondItem="8fg-uJ-uFx" secondAttribute="top" id="Dxc-pP-h6M"/>
+                                    <constraint firstItem="IZ1-L8-a31" firstAttribute="leading" secondItem="Z89-wK-aoK" secondAttribute="trailing" constant="30" id="GOc-IL-7Pf"/>
+                                    <constraint firstItem="kNd-s5-bKW" firstAttribute="top" secondItem="8fg-uJ-uFx" secondAttribute="top" id="Hr5-in-Geq"/>
+                                    <constraint firstItem="Z89-wK-aoK" firstAttribute="leading" secondItem="8fg-uJ-uFx" secondAttribute="leading" constant="30" id="Vct-TP-ELu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z89-wK-aoK" secondAttribute="bottom" id="aj6-6W-yMR"/>
+                                    <constraint firstItem="kNd-s5-bKW" firstAttribute="leading" secondItem="IZ1-L8-a31" secondAttribute="trailing" constant="30" id="neS-NE-zUa"/>
+                                    <constraint firstAttribute="height" constant="300" id="npU-b8-HaW"/>
+                                    <constraint firstItem="Z89-wK-aoK" firstAttribute="top" secondItem="8fg-uJ-uFx" secondAttribute="top" id="nxE-Gw-Fzo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8fg-uJ-uFx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="509-iI-65Y"/>
+                            <constraint firstItem="8fg-uJ-uFx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DsQ-jD-AaX"/>
+                            <constraint firstItem="8fg-uJ-uFx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="gKD-KW-kmC"/>
+                            <constraint firstItem="8fg-uJ-uFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pAG-21-OtN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="card1" destination="Z89-wK-aoK" id="gQW-fz-TDM"/>
+                        <outlet property="card1Width" destination="B9s-d3-bGj" id="Akn-Dz-wDQ"/>
+                        <outlet property="card2" destination="IZ1-L8-a31" id="8eJ-HP-h38"/>
+                        <outlet property="card2Width" destination="eR9-w4-5Ht" id="dI4-E2-FZO"/>
+                        <outlet property="card3" destination="kNd-s5-bKW" id="rJe-pg-DhI"/>
+                        <outlet property="card3Width" destination="iGo-u4-KCf" id="UZO-fr-K2o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
